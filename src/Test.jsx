@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './index.css'
 
 function Test() {
   const Books = [
@@ -10,7 +11,7 @@ function Test() {
   ];
 
   function BookCard({ data: { id, name } }) {
-    const [selected, setSelected] = useState(true);
+    const [selected, setSelected] = useState(false);
 
     return (
       <li key={id} className={selected ? "bgLight" : ""}>
