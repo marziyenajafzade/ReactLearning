@@ -10,7 +10,7 @@ function Test() {
     { id: '5', name: 'book5' }
   ];
 
-  function BookCard({ data: { id, name } }) {
+  const BookCard=({ data: { id, name } })=> {
     const [selected, setSelected] = useState(false);
 
     return (
