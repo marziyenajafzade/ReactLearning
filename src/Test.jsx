@@ -1,17 +1,34 @@
+import { useState } from "react";
 
 function Test() {
-    const Books =[
-        {id:'1', name:'book1'},
-        {id:'2', name:'book2'},
-        {id:'3', name:'book3'},
-        {id:'4', name:'book4'},
-        {id:'5', name:'book5'}
-    ]
+  const Books = [
+    { id: '1', name: 'book1' },
+    { id: '2', name: 'book2' },
+    { id: '3', name: 'book3' },
+    { id: '4', name: 'book4' },
+    { id: '5', name: 'book5' }
+  ];
+
+  function BookCard({ data: { id, name } }) {
+    const [selected, setSelected] = useState(true);
+
+    return (
+      <li key={id} className={selected ? "bgLight" : ""}>
+        {name}
+        <button onClick={() => setSelected((s) => !s)}>change</button>
+      </li>
+    );
+  }
+
   return (
-   <ul>
-    {Books.map((book)=>(<li key={book.id}>{book.name}</li>))}
-   </ul>
-  )
+    <>
+      <ul>
+        {Books.map((book) => (
+          <BookCard key={book.id} data={book} />
+        ))}
+      </ul>
+    </>
+  );
 }
 
-export default Test
+export default Test;
