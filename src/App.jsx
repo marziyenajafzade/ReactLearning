@@ -1,5 +1,6 @@
 import Test from "./Components/Test"
 import InlineCss from "./Components/InlineCss"
+import StyledComponents from "./Components/StyledComponents"
 function App() {
   return (
     <>
@@ -7,6 +8,8 @@ function App() {
       <p>React learning</p>
       <Test />
       <InlineCss />
+      <StyledComponents />
+
     </>
   )
 }
