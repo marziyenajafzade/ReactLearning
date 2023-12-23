@@ -9,7 +9,6 @@ function App() {
       <Test />
       <InlineCss />
       <StyledComponents />
-
     </>
   )
 }
