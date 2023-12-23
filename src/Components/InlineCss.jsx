@@ -17,7 +17,7 @@ const InlineCss = () => {
   const cssStyleClass={marginTop:'10px', color:'blue',border:'1px dashed'}
 
   return (
-    <div>
+    <div className="row">
       <button onClick={toggleStyle}>Change Style</button>
       <ul >
         {items.map((item) => (

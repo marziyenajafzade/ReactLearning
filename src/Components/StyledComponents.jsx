@@ -6,7 +6,7 @@ color: orange;
 &:hover{
     color : red;
     font-weight : bold;
-     font-size : large
+     font-size : small
 }
 `;
 const SecondDiv = styled.div`
@@ -17,7 +17,7 @@ const SecondDiv = styled.div`
 const StyledComponents = () => {
     const [selected, setSelected] = useState(true)
     return (
-        <>
+        <div className="row">
          { /*styled components */}
         <DIV>
             <h1>
@@ -29,7 +29,7 @@ const StyledComponents = () => {
             <button onClick={()=>setSelected((s)=> !s)}>Change</button>
             <span>test styled componets with props</span>
         </SecondDiv>
-        </>
+        </div>
     )
 }
 
