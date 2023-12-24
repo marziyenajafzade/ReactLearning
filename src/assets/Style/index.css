@@ -1,0 +1,30 @@
+
+/* iPhone SE and smaller */
+@media only screen and (max-width: 320px) {
+    /* Add styles specific to iPhone SE and smaller here */
+  }
+  
+  /* iPhone 6/7/8 and larger, and Android phones */
+  @media only screen and (min-width: 321px) and (max-width: 767px) {
+    /* Add styles specific to iPhone 6/7/8 and larger, and Android phones here */
+  }
+  
+  /* iPad and similar tablets */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Add styles specific to iPad and similar tablets here */
+  }
+  
+  /* Microsoft Surface and larger tablets */
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    /* Add styles specific to Microsoft Surface and larger tablets here */
+  }
+  
+  /* Small laptops and desktops */
+  @media only screen and (min-width: 1366px) and (max-width: 1599px) {
+    /* Add styles specific to small laptops and desktops here */
+  }
+  
+  /* Large desktops */
+  @media only screen and (min-width: 1600px) {
+    /* Add styles specific to large desktops here */
+  }
